@@ -1,0 +1,13 @@
+Site Configuration File: ..\csyx_templates\default_one_block.csyx
+Input File line: 0
+Error Description: WARNING: This is a TMY3 file. The year will be changed to 1990 to ensure the climate data is in chronological order.
+--------------------------------------------------------
+Site Configuration File: ..\csyx_templates\default_one_block.csyx
+Input File line: 0
+Error Description: WARNING: Warning: Min.V is not defined for this file. CASSYS assigned 0 for this value.
+--------------------------------------------------------
+Site Configuration File: ..\csyx_templates\default_one_block.csyx
+Input File line: 1
+Error Description: FATAL: CASSYS encountered an unexpected error: Length cannot be less than zero.
+Parameter name: length
+--------------------------------------------------------

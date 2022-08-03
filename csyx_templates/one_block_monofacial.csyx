@@ -1,0 +1,403 @@
+<Site>
+	<Version>1.5.3</Version>
+	<ModeSelect>Grid-Connected System</ModeSelect>
+	<SiteDef>
+		<Name>Site Name</Name>
+		<Country>Country Name</Country>
+		<Region>Region Name</Region>
+		<City></City>
+		<Latitude>40</Latitude>
+		<Longitude>-90</Longitude>
+		<Altitude>0</Altitude>
+		<TimeZone>-6</TimeZone>
+		<UseLocTime>True</UseLocTime>
+		<RefMer>-90</RefMer>
+		<TransEnum>1</TransEnum>
+		<Albedo Frequency="Monthly">
+			<Jan>0.2</Jan>
+			<Feb>0.2</Feb>
+			<Mar>0.2</Mar>
+			<Apr>0.2</Apr>
+			<May>0.2</May>
+			<Jun>0.2</Jun>
+			<Jul>0.2</Jul>
+			<Aug>0.2</Aug>
+			<Sep>0.2</Sep>
+			<Oct>0.2</Oct>
+			<Nov>0.2</Nov>
+			<Dec>0.2</Dec>
+		</Albedo>
+	</SiteDef>
+	<Orientation_and_Shading ArrayType="Single Axis Horizontal Tracking (N-S)">
+		<AxisTiltSAST>0</AxisTiltSAST>
+		<AxisAzimuthSAST>0</AxisAzimuthSAST>
+		<RotationMaxSAST>60</RotationMaxSAST>
+		<RowsBlockSAST>1</RowsBlockSAST>
+		<PitchSAST>0</PitchSAST>
+		<WActiveSAST>1</WActiveSAST>
+		<BacktrackOptSAST>False</BacktrackOptSAST>
+		<UseCellValSAST>False</UseCellValSAST>
+		<DefineHorizonProfile>False</DefineHorizonProfile>
+	</Orientation_and_Shading>
+	<Bifacial>
+		<UseBifacialModel>True</UseBifacialModel>
+		<GroundClearance>1</GroundClearance>
+		<StructBlockingFactor>0.1</StructBlockingFactor>
+		<PanelTransFactor>0</PanelTransFactor>
+		<BifacialityFactor>0.75</BifacialityFactor>
+		<BifAlbedo Frequency="Monthly">
+			<Jan>0.2</Jan>
+			<Feb>0.2</Feb>
+			<Mar>0.2</Mar>
+			<Apr>0.2</Apr>
+			<May>0.2</May>
+			<Jun>0.2</Jun>
+			<Jul>0.2</Jul>
+			<Aug>0.2</Aug>
+			<Sep>0.2</Sep>
+			<Oct>0.2</Oct>
+			<Nov>0.2</Nov>
+			<Dec>0.2</Dec>
+		</BifAlbedo>
+	</Bifacial>
+	<System TotalArrays="1">
+		<ACWiringLossAtSTC>False</ACWiringLossAtSTC>
+		<SystemDC>3402</SystemDC>
+		<SystemAC>2750</SystemAC>
+		<SubArray1>
+			<PVModule>
+				<Module>CS3W-405P 1500VHE</Module>
+				<Manufacturer>Canadian Solar Inc.</Manufacturer>
+				<Origin>User_Added</Origin>
+				<FileName>CS3W-405P_MIX_CSIHE_PRE_V6_77_1500V_2018Q4.PAN</FileName>
+				<Pnom>405</Pnom>
+				<PnomToLow>0</PnomToLow>
+				<PnomToUp>1.2</PnomToUp>
+				<LIDLoss></LIDLoss>
+				<Technology>mtSiPoly</Technology>
+				<CellsinS>72</CellsinS>
+				<CellsinP>2</CellsinP>
+				<Gref>1000</Gref>
+				<Tref>25</Tref>
+				<Vmpp>38.9</Vmpp>
+				<Impp>10.42</Impp>
+				<Voc>47.4</Voc>
+				<Isc>10.98</Isc>
+				<mIsc>5.49</mIsc>
+				<mVco>-137.4</mVco>
+				<mPmpp>-0.37</mPmpp>
+				<Rsh0>2000</Rsh0>
+				<Rshexp>5.5</Rshexp>
+				<Rshunt>550</Rshunt>
+				<Rserie>0.252</Rserie>
+				<Gamma>1.024</Gamma>
+				<muGamma>-0.0003</muGamma>
+				<RelEffic800>0.43</RelEffic800>
+				<RelEffic700></RelEffic700>
+				<RelEffic600></RelEffic600>
+				<RelEffic400>-1.26</RelEffic400>
+				<RelEffic200>-3.4</RelEffic200>
+				<Vmax>1500</Vmax>
+				<ByPassDiodes>3</ByPassDiodes>
+				<ByPassDiodeVoltage>-0.7</ByPassDiodeVoltage>
+				<Brev>11.04</Brev>
+				<Length>2108</Length>
+				<Width>1048</Width>
+				<Depth>40</Depth>
+				<Weight>24.9</Weight>
+				<AreaM>2.209184</AreaM>
+				<Cellarea>137.8</Cellarea>
+				<Area>1.98432</Area>
+				<IAMDefinition>
+					<AOI1>10</AOI1>
+					<Mod1>1</Mod1>
+					<AOI2>20</AOI2>
+					<Mod2>1</Mod2>
+					<AOI3>30</AOI3>
+					<Mod3>1</Mod3>
+					<AOI4>40</AOI4>
+					<Mod4>0.99</Mod4>
+					<AOI5>50</AOI5>
+					<Mod5>0.99</Mod5>
+					<AOI6>60</AOI6>
+					<Mod6>0.97</Mod6>
+					<AOI7>70</AOI7>
+					<Mod7>0.92</Mod7>
+					<AOI8>80</AOI8>
+					<Mod8>0.76</Mod8>
+					<AOI9>90</AOI9>
+					<Mod9>0</Mod9>
+				</IAMDefinition>
+				<NumModules>8400</NumModules>
+				<ModulesInString>28</ModulesInString>
+				<NumStrings>300</NumStrings>
+				<LossFraction>0.015</LossFraction>
+				<GlobWireResist>5.22212930250036</GlobWireResist>
+			</PVModule>
+			<Inverter>
+				<Model>Sunny Central 2750-EV_Vers.B1_35°C</Model>
+				<Manufacturer>SMA</Manufacturer>
+				<Origin>User_Added</Origin>
+				<FileName>PVsyst_SC 2750-EV_35°C_V1.0.ond</FileName>
+				<PNomAC>2750</PNomAC>
+				<PMaxAC>2750</PMaxAC>
+				<Inom>2646</Inom>
+				<IMax>2646</IMax>
+				<Output>600</Output>
+				<Type>Tri</Type>
+				<Frequency>0</Frequency>
+				<Threshold>2000</Threshold>
+				<MinMPP>849</MinMPP>
+				<MaxMPP>1425</MaxMPP>
+				<Max.V>1500</Max.V>
+				<Min.V></Min.V>
+				<Oper.>MPPT</Oper.>
+				<NumInverters>1</NumInverters>
+				<MultiCurve>True</MultiCurve>
+				<Efficiency>
+					<Low Voltage="875">
+						<Max.>98.66</Max.>
+						<Euro>98.471</Euro>
+						<IN2>141.6076</IN2>
+						<Effic2>97.0993082292193</Effic2>
+						<IN3>280.1834</IN3>
+						<Effic3>98.1499974659455</Effic3>
+						<IN4>558.149</IN4>
+						<Effic4>98.5399955925747</Effic4>
+						<IN5>836.5443</IN5>
+						<Effic5>98.6200013555767</Effic5>
+						<IN6>1394.0992</IN6>
+						<Effic6>98.6299970619021</Effic6>
+						<IN7>2094.5466</IN7>
+						<Effic7>98.469998232553</Effic7>
+						<IN8>2798.4125</IN8>
+						<Effic8>98.2700012953773</Effic8>
+					</Low>
+
+					<Med Voltage="1150">
+						<Max.>98.29</Max.>
+						<Euro>98.028</Euro>
+						<IN2>144.5087</IN2>
+						<Effic2>95.149980589404</Effic2>
+						<IN3>282.9509</IN3>
+						<Effic3>97.1900071708554</Effic3>
+						<IN4>560.8811</IN4>
+						<Effic4>98.0599988125826</Effic4>
+						<IN5>840.0367</IN5>
+						<Effic5>98.2099948728431</Effic5>
+						<IN6>1398.9215</IN6>
+						<Effic6>98.2900041210318</Effic6>
+						<IN7>2100.3056</IN7>
+						<Effic7>98.1999952768778</Effic7>
+						<IN8>2806.9817</IN8>
+						<Effic8>97.9700010156817</Effic8>
+					</Med>
+					<High Voltage="1283">
+						<Max.>98.18</Max.>
+						<Euro>97.838</Euro>
+						<IN2>146.0125</IN2>
+						<Effic2>94.170019690095</Effic2>
+						<IN3>284.2377</IN3>
+						<Effic3>96.7500088834099</Effic3>
+						<IN4>562.3147</IN4>
+						<Effic4>97.8099985648606</Effic4>
+						<IN5>841.665</IN5>
+						<Effic5>98.0199960792002</Effic5>
+						<IN6>1400.7742</IN6>
+						<Effic6>98.1600032324981</Effic6>
+						<IN7>2102.6608</IN7>
+						<Effic7>98.090001012051</Effic7>
+						<IN8>2809.8498</IN8>
+						<Effic8>97.8700000263359</Effic8>
+					</High>
+				</Efficiency>
+				<BipolarInput>False</BipolarInput>
+				<LossFraction>0.005</LossFraction>
+			</Inverter>
+		</SubArray1>
+	</System>
+	<Transformer>
+		<PNomTrf>2750</PNomTrf>
+		<PIronLossTrf>5</PIronLossTrf>
+		<PFullLoadLss>30</PFullLoadLss>
+		<PResLssTrf>25</PResLssTrf>
+		<ACCapSTC>3326.35131869346</ACCapSTC>
+		<NightlyDisconnect>False</NightlyDisconnect>
+	</Transformer>
+	<Losses>
+		<ThermalLosses>
+			<UseMeasuredValues>False</UseMeasuredValues>
+			<ConsHLF>30</ConsHLF>
+			<ConvHLF>0</ConvHLF>
+		</ThermalLosses>
+		<ModuleQualityLosses>
+			<EfficiencyLoss>-0.003</EfficiencyLoss>
+			<ModuleLID>0.013</ModuleLID>
+			<ModuleAgeing>0.005</ModuleAgeing>
+		</ModuleQualityLosses>
+		<ModuleMismatchLosses>
+			<PowerLoss>0.008</PowerLoss>
+			<LossFixedVoltage>0.001</LossFixedVoltage>
+		</ModuleMismatchLosses>
+		<IncidenceAngleModifier IAMSelection="User Defined">
+			<IAM_0>1</IAM_0>
+			<IAM_5>0.999809008122833</IAM_5>
+			<IAM_10>0.999228669405713</IAM_10>
+			<IAM_15>0.998236190979496</IAM_15>
+			<IAM_20>0.996791111376204</IAM_20>
+			<IAM_25>0.994831104051875</IAM_25>
+			<IAM_30>0.992264973081037</IAM_30>
+			<IAM_35>0.988961270561927</IAM_35>
+			<IAM_40>0.984729635533386</IAM_40>
+			<IAM_45>0.979289321881345</IAM_45>
+			<IAM_50>0.972213808656979</IAM_50>
+			<IAM_55>0.962827660218945</IAM_55>
+			<IAM_60>0.95</IAM_60>
+			<IAM_65>0.931689920842375</IAM_65>
+			<IAM_70>0.903809779991846</IAM_70>
+			<IAM_75>0.856814834742186</IAM_75>
+			<IAM_80>0.762061475842818</IAM_80>
+			<IAM_85>0.476314337716507</IAM_85>
+			<IAM_90>0</IAM_90>
+		</IncidenceAngleModifier>
+	</Losses>
+	<SoilingLosses Frequency="Monthly">
+		<Jan>0.005</Jan>
+		<Feb>0.005</Feb>
+		<Mar>0.005</Mar>
+		<Apr>0.005</Apr>
+		<May>0.005</May>
+		<Jun>0.01</Jun>
+		<Jul>0.005</Jul>
+		<Aug>0.01</Aug>
+		<Sep>0.005</Sep>
+		<Oct>0.01</Oct>
+		<Nov>0.005</Nov>
+		<Dec>0.005</Dec>
+	</SoilingLosses>
+	<Spectral>
+		<UseSpectralModel>True</UseSpectralModel>
+		<ClearnessIndex>
+			<kt>0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1</kt>
+			<ktCorrection>0,0,0,0,0,0,0,0,0,0,0</ktCorrection>
+		</ClearnessIndex>
+	</Spectral>
+	<InputFilePath>Test Project_27.935729_-15.571356_tmy3.csv</InputFilePath>
+	<InputFileStyle>
+		<RowsToSkip>2</RowsToSkip>
+		<Delimeter>,</Delimeter>
+		<TimeFormat>yyyy-MM-dd HH:mm:ss</TimeFormat>
+		<AveragedAt>End</AveragedAt>
+		<Interval>60</Interval>
+		<TMYType>3</TMYType>
+		<MeterTilt>N/A</MeterTilt>
+		<MeterAzimuth>N/A</MeterAzimuth>
+		<TimeStamp>N/A</TimeStamp>
+		<GlobalRad>N/A</GlobalRad>
+		<HorIrradiance>N/A</HorIrradiance>
+		<Hor_Diffuse>N/A</Hor_Diffuse>
+		<TempAmbient>N/A</TempAmbient>
+		<TempPanel>N/A</TempPanel>
+		<WindSpeed>N/A</WindSpeed>
+		<MeasAlbedo>N/A</MeasAlbedo>
+		<IncorrectClimateRowsAllowed>0</IncorrectClimateRowsAllowed>
+	</InputFileStyle>
+	<OutputFilePath>out.csv</OutputFilePath>
+	<OutputFileStyle>
+		<Input_Timestamp Units="yyyy-mm-dd hh:mm:ss" DisplayName="Input Timestamp" Summarize="False">True</Input_Timestamp>
+		<Timestamp_Used_for_Simulation Units="yyyy-mm-dd hh:mm:ss" DisplayName="Timestamp Used for Simulation" Summarize="False">True</Timestamp_Used_for_Simulation>
+		<Sun_Azimuth_Angle Units="deg." DisplayName="Sun Azimuth Angle" Summarize="False">True</Sun_Azimuth_Angle>
+		<Sun_Zenith_Angle Units="deg." DisplayName="Sun Zenith Angle" Summarize="False">True</Sun_Zenith_Angle>
+		<Air_Mass Units="#" DisplayName="Air Mass" Summarize="False">True</Air_Mass>
+		<ET_Irrad Units="W/m2" DisplayName="Extraterrestial Irradiance" Summarize="False">True</ET_Irrad>
+		<Horizontal_Global_Irradiance Units="W/m2" DisplayName="Horizontal Global Irradiance" Summarize="False">True</Horizontal_Global_Irradiance>
+		<Normal_beam_irradiance Units="W/m2" DisplayName="Normal beam irradiance" Summarize="False">True</Normal_beam_irradiance>
+		<Horizontal_beam_irradiance Units="W/m2" DisplayName="Horizontal beam irradiance" Summarize="False">True</Horizontal_beam_irradiance>
+		<Horizontal_diffuse_irradiance Units="W/m2" DisplayName="Horizontal diffuse irradiance" Summarize="False">True</Horizontal_diffuse_irradiance>
+		<Ambient_Temperature Units="deg. C" DisplayName="Ambient Temperature" Summarize="False">True</Ambient_Temperature>
+		<Wind_Velocity Units="m/s" DisplayName="Wind Velocity" Summarize="False">True</Wind_Velocity>
+		<Albedo Units="Unitless" DisplayName="Albedo" Summarize="False">True</Albedo>
+		<Tracker_Slope Units="deg." DisplayName="Tracker Slope" Summarize="False">True</Tracker_Slope>
+		<Tracker_Azimuth Units="deg." DisplayName="Tracker Azimuth" Summarize="False">True</Tracker_Azimuth>
+		<Collector_Surface_Slope Units="deg." DisplayName="Collector Surface Slope" Summarize="False">True</Collector_Surface_Slope>
+		<Collector_Surface_Azimuth Units="deg." DisplayName="Collector Surface Azimuth" Summarize="False">True</Collector_Surface_Azimuth>
+		<Tracker_Rotation_Angle Units="deg." DisplayName="Rotation Angle" Summarize="False">True</Tracker_Rotation_Angle>
+		<Incidence_Angle Units="deg." DisplayName="Incidence Angle" Summarize="False">True</Incidence_Angle>
+		<Global_Irradiance_in_Array_Plane Units="W/m2" DisplayName="Global Irradiance in Array Plane" Summarize="False">True</Global_Irradiance_in_Array_Plane>
+		<Beam_Irradiance_in_Array_Plane Units="W/m2" DisplayName="Beam Irradiance in Array Plane" Summarize="False">True</Beam_Irradiance_in_Array_Plane>
+		<Diffuse_Irradiance_in_Array_Plane Units="W/m2" DisplayName="Diffuse Irradiance in Array Plane" Summarize="False">True</Diffuse_Irradiance_in_Array_Plane>
+		<Ground_Reflected_Irradiance_in_Array_Plane Units="W/m2" DisplayName="Ground Reflected Irradiance in Array Plane" Summarize="False">True</Ground_Reflected_Irradiance_in_Array_Plane>
+		<FarShading_Global_Loss Units="W/m2" DisplayName="Horizon Shading Loss for Global" Summarize="False">True</FarShading_Global_Loss>
+		<FarShading_Beam_Loss Units="W/m2" DisplayName="Horizon Shading Loss for Beam" Summarize="False">True</FarShading_Beam_Loss>
+		<FarShading_Diffuse_Loss Units="W/m2" DisplayName="Horizon Shading Loss for Diffuse" Summarize="False">True</FarShading_Diffuse_Loss>
+		<FarShading_Ground_Reflected_Loss Units="W/m2" DisplayName="Horizon Shading Loss for Ground Reflected" Summarize="False">True</FarShading_Ground_Reflected_Loss>
+		<Profile_Angle Units="deg." DisplayName="Profile Angle" Summarize="False">True</Profile_Angle>
+		<Near_Shading_Factor_on_Global Units="Unitless" DisplayName="Near Shading Factor on Global" Summarize="False">True</Near_Shading_Factor_on_Global>
+		<Near_Shading_Factor_on_Beam Units="Unitless" DisplayName="Near Shading Factor on Beam" Summarize="False">True</Near_Shading_Factor_on_Beam>
+		<Near_Shading_Factor_on__Diffuse Units="Unitless" DisplayName="Near Shading Factor on  Diffuse" Summarize="False">True</Near_Shading_Factor_on__Diffuse>
+		<Near_Shading_Factor_on_Ground_Reflected Units="Unitless" DisplayName="Near Shading Factor on Ground Reflected" Summarize="False">True</Near_Shading_Factor_on_Ground_Reflected>
+		<Near_Shading_Loss_for_Global Units="W/m2" DisplayName="Near Shading Loss for Global" Summarize="False">True</Near_Shading_Loss_for_Global>
+		<Near_Shading_Loss_for_Beam Units="W/m2" DisplayName="Near Shading Loss for Beam" Summarize="False">True</Near_Shading_Loss_for_Beam>
+		<Near_Shading_Loss_for_Diffuse Units="W/m2" DisplayName="Near Shading Loss for Diffuse" Summarize="False">True</Near_Shading_Loss_for_Diffuse>
+		<Near_Shading_Loss_for_Ground_Reflected Units="W/m2" DisplayName="Near Shading Loss for Ground Reflected" Summarize="False">True</Near_Shading_Loss_for_Ground_Reflected>
+		<Global_POA_Irradiance_Corrected_for_Shading Units="W/m2" DisplayName="Global POA Irradiance Corrected for Shading" Summarize="False">True</Global_POA_Irradiance_Corrected_for_Shading>
+		<IAM_Factor_on_Global Units="Unitless" DisplayName="IAM Factor on Global" Summarize="False">True</IAM_Factor_on_Global>
+		<IAM_Factor_on_Beam Units="Unitless" DisplayName="IAM Factor on Beam" Summarize="False">True</IAM_Factor_on_Beam>
+		<IAM_Factor_on__Diffuse Units="Unitless" DisplayName="IAM Factor on  Diffuse" Summarize="False">True</IAM_Factor_on__Diffuse>
+		<IAM_Factor_on_Ground_Reflected Units="Unitless" DisplayName="IAM Factor on Ground Reflected" Summarize="False">True</IAM_Factor_on_Ground_Reflected>
+		<Incidence_Loss_for_Global Units="W/m2" DisplayName="Incidence Loss for Global" Summarize="False">True</Incidence_Loss_for_Global>
+		<Incidence_Loss_for_Beam Units="W/m2" DisplayName="Incidence Loss for Beam" Summarize="False">True</Incidence_Loss_for_Beam>
+		<Incidence_Loss_for_Diffuse Units="W/m2" DisplayName="Incidence Loss for Diffuse" Summarize="False">True</Incidence_Loss_for_Diffuse>
+		<Incidence_Loss_for_Ground_Reflected Units="W/m2" DisplayName="Incidence Loss for Ground Reflected" Summarize="False">True</Incidence_Loss_for_Ground_Reflected>
+		<Global_POA_Irradiance_Corrected_for_Incidence Units="W/m2" DisplayName="Global POA Irradiance Corrected for Incidence" Summarize="False">True</Global_POA_Irradiance_Corrected_for_Incidence>
+		<Radiation_Soiling_Loss Units="W/m2" DisplayName="Soiling Loss" Summarize="False">True</Radiation_Soiling_Loss>
+		<Interrow_Albedo Units="Unitless" DisplayName="Inter-row Albedo" Summarize="False">True</Interrow_Albedo>
+		<Average_Ground_GHI Units="W/m2" DisplayName="Global Irradiance on Ground" Summarize="False">True</Average_Ground_GHI>
+		<IAM_Factor_on_Beam_Back Units="Unitless" DisplayName="Back IAM Factor on Beam" Summarize="False">True</IAM_Factor_on_Beam_Back>
+		<IAM_Factor_on_Diffuse_Back Units="Unitless" DisplayName="Back IAM Factor on Diffuse" Summarize="False">True</IAM_Factor_on_Diffuse_Back>
+		<Beam_Irradiance_in_Array_Back Units="W/m2" DisplayName="Beam Irradiance in Array Back" Summarize="False">True</Beam_Irradiance_in_Array_Back>
+		<Effective_Back_Global_Irradiance Units="W/m2" DisplayName="Effective Global Irradiance in Array Back" Summarize="False">True</Effective_Back_Global_Irradiance>
+		<Effective_Back_Beam_Irradiance Units="W/m2" DisplayName="Effective Beam Irradiance in Array Back" Summarize="False">True</Effective_Back_Beam_Irradiance>
+		<Effective_Back_Diffuse_Irradiance Units="W/m2" DisplayName="Effective Diffuse Irradiance in Array Back" Summarize="False">True</Effective_Back_Diffuse_Irradiance>
+		<Effective_Back_Ground_Reflected_Irradiance Units="W/m2" DisplayName="Effective Ground Reflected Irradiance in Array Back" Summarize="False">True</Effective_Back_Ground_Reflected_Irradiance>
+		<Effective_Back_Front_Reflected_Irradiance Units="W/m2" DisplayName="Effective Front Reflected Irradiance in Array Back" Summarize="False">True</Effective_Back_Front_Reflected_Irradiance>
+		<ShowBackIrradianceProfile Units="W/m2" DisplayName="Effective Global Irradiance Profile on Array Back" Summarize="False">True</ShowBackIrradianceProfile>
+		<Back_Global_Irradiance_Inhomogeneity Units="Unitless" DisplayName="Inhomogeneity of Global Irradiance in Array Back" Summarize="False">True</Back_Global_Irradiance_Inhomogeneity>
+		<Bifacial_Gain Units="W/m2" DisplayName="Bifacial Gain" Summarize="False">True</Bifacial_Gain>
+		<Radiation_Spectral_Loss Units="W/m2" DisplayName="Spectral Loss" Summarize="False">True</Radiation_Spectral_Loss>
+		<Effective_Irradiance_in_POA Units="W/m2" DisplayName="Effective Global Irradiance in Array Plane" Summarize="False">True</Effective_Irradiance_in_POA>
+		<Radiation_Available_for_Power_Conversion Units="W/m2" DisplayName="Radiation Available for Power Conversion" Summarize="False">True</Radiation_Available_for_Power_Conversion>
+		<Measured_Module_Temperature__deg_C_ Units="deg. C" DisplayName="Measured Module Temperature" Summarize="False">True</Measured_Module_Temperature__deg_C_>
+		<Calculated_Module_Temperature__deg_C_ Units="deg. C" DisplayName="Calculated Module Temperature" Summarize="False">True</Calculated_Module_Temperature__deg_C_>
+		<Difference_between_Module_and_Ambient_Temp.__deg_C_ Units="deg. C" DisplayName="Difference between Module and Ambient Temp." Summarize="False">True</Difference_between_Module_and_Ambient_Temp.__deg_C_>
+		<Array_Nominal_Power Units="kW" DisplayName="Array Nominal Power" Summarize="False">True</Array_Nominal_Power>
+		<Power_Loss_Due_to_Temperature Units="kW" DisplayName="Energy Loss Due To Temperature" Summarize="False">True</Power_Loss_Due_to_Temperature>
+		<Energy_Loss_Due_to_Irradiance Units="kW" DisplayName="Energy Loss Due To Irradiance Level" Summarize="False">True</Energy_Loss_Due_to_Irradiance>
+		<Module_Quality_Loss Units="kW" DisplayName="Module Quality Loss" Summarize="False">True</Module_Quality_Loss>
+		<Module_LID_Loss Units="kW" DisplayName="Module LID" Summarize="False">True</Module_LID_Loss>
+		<Module_Ageing_Loss Units="kW" DisplayName="Module ageing" Summarize="False">True</Module_Ageing_Loss>
+		<Modules_Array_Mismatch_Loss Units="kW" DisplayName="Modules Array Mismatch Loss" Summarize="False">True</Modules_Array_Mismatch_Loss>
+		<Ohmic_Wiring_Loss Units="kW" DisplayName="DC Wiring Loss" Summarize="False">True</Ohmic_Wiring_Loss>
+		<Sub_Array_Performance Units="kW, A, V" DisplayName="DC Voltage, Current and Power of each Sub-Array" Summarize="False">True</Sub_Array_Performance>
+		<PV_Array_Voltage Units="V" DisplayName="Effective Voltage at the Output of the Array" Summarize="False">True</PV_Array_Voltage>
+		<PV_Array_Current Units="A" DisplayName="Effective Current at the Output of the Array" Summarize="False">True</PV_Array_Current>
+		<Inverter_Loss_Due_to_Power_Threshold Units="kW" DisplayName="Virtual Energy Available to Inverter" Summarize="False">True</Inverter_Loss_Due_to_Power_Threshold>
+		<Inverter_Loss_Due_to_Low_Voltage_Threshold Units="kW" DisplayName="Inverter Loss Due to Low Voltage Threshold" Summarize="False">True</Inverter_Loss_Due_to_Low_Voltage_Threshold>
+		<Inverter_Loss_Due_to_High_Voltage_Threshold Units="kW" DisplayName="Inverter Loss Due to High Voltage Threshold" Summarize="False">True</Inverter_Loss_Due_to_High_Voltage_Threshold>
+		<Inverter_Loss_Due_to_Low_Power_Threshold Units="kW" DisplayName="Inverter Loss Due to Low Power Threshold " Summarize="False">True</Inverter_Loss_Due_to_Low_Power_Threshold>
+		<Inverter_Loss_Due_to_High_Power_Threshold Units="kW" DisplayName="Inverter Loss Due to High Power Threshold (Clipping)" Summarize="False">True</Inverter_Loss_Due_to_High_Power_Threshold>
+		<Effective_Energy_at_the_Output_of_the_Array Units="kW" DisplayName="Actual Energy Available to Inverter" Summarize="False">True</Effective_Energy_at_the_Output_of_the_Array>
+		<DCAC_Conversion_Losses Units="kW" DisplayName="DC to AC Conversion Loss" Summarize="False">True</DCAC_Conversion_Losses>
+		<ShowSubInv Units="kW" DisplayName="AC Output Power of each Sub-Array " Summarize="False">True</ShowSubInv>
+		<Available_Energy_at_Inverter_Output Units="kW" DisplayName="Available Power at Inverter Output" Summarize="False">True</Available_Energy_at_Inverter_Output>
+		<AC_Ohmic_Loss Units="kW" DisplayName="AC Ohmic Loss" Summarize="False">True</AC_Ohmic_Loss>
+		<External_transformer_loss Units="kW" DisplayName="Main Transformer Loss (day-time)" Summarize="False">True</External_transformer_loss>
+		<NightTime_Energizing_Loss Units="kW" DisplayName="Main Transformer Loss (night-time)" Summarize="False">True</NightTime_Energizing_Loss>
+		<Power_Injected_into_Grid Units="kW" DisplayName="Power Injected into Grid" Summarize="False">True</Power_Injected_into_Grid>
+		<Energy_Injected_into_Grid Units="kWh" DisplayName="Energy Injected into Grid" Summarize="False">True</Energy_Injected_into_Grid>
+		<PV_Array_Efficiency Units="%" DisplayName="PV Array Efficiency" Summarize="False">True</PV_Array_Efficiency>
+		<Inverter_Efficiency Units="%" DisplayName="Inverter Efficiency " Summarize="False">True</Inverter_Efficiency>
+		<AC_side_Efficiency Units="%" DisplayName="AC-side Efficiency" Summarize="False">True</AC_side_Efficiency>
+		<Overall_System_Efficiency Units="%" DisplayName="Overall System Efficiency" Summarize="False">True</Overall_System_Efficiency>
+	</OutputFileStyle>
+</Site>

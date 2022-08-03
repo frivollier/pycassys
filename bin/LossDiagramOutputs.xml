@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Losses>
+  <Horizontal_Global_Radiation>1902040.14065896</Horizontal_Global_Radiation>
+  <Global_Radiation_in_POA>2497325.59279195</Global_Radiation_in_POA>
+  <Horizon_Shading_Losses>0</Horizon_Shading_Losses>
+  <Near_Shading_Losses>45693.5560684522</Near_Shading_Losses>
+  <Soiling_Losses>24427.5991608586</Soiling_Losses>
+  <Incidence_Angle_Losses>8872.12063764343</Incidence_Angle_Losses>
+  <Bifacial_Gain>-96557.7901282945</Bifacial_Gain>
+  <Spectral_Losses>0</Spectral_Losses>
+  <Effective_POA_Radiation>2514890.10705329</Effective_POA_Radiation>
+  <PV_Array_Nominal_Energy>9679510.23523528</PV_Array_Nominal_Energy>
+  <Energy_Loss_Due_to_Temperature>602785.395214804</Energy_Loss_Due_to_Temperature>
+  <Energy_Loss_Due_to_Irradiance_Level>20002.4181449768</Energy_Loss_Due_to_Irradiance_Level>
+  <Module_Quality_Losses>-24845.2545879559</Module_Quality_Losses>
+  <Module_LID_Losses>91099.2668225049</Module_LID_Losses>
+  <Module_Ageing_Losses>20704.3788232966</Module_Ageing_Losses>
+  <Mismatch_Losses>37260.0195230753</Mismatch_Losses>
+  <DC_Wiring_Losses>8.74208489556244</DC_Wiring_Losses>
+  <Virtual_Inverter_Input>8932495.26920971</Virtual_Inverter_Input>
+  <Energy_Lost_to_Input_Voltage_too_Low>1.52886756970325</Energy_Lost_to_Input_Voltage_too_Low>
+  <Energy_Lost_to_Input_Voltage_too_High>0</Energy_Lost_to_Input_Voltage_too_High>
+  <Energy_Lost_to_Input_Power_too_Low>108.234244217147</Energy_Lost_to_Input_Power_too_Low>
+  <Energy_Lost_to_Input_Power_too_High>774861.129445073</Energy_Lost_to_Input_Power_too_High>
+  <Actual_Inverter_Input_Energy>8157524.37665286</Actual_Inverter_Input_Energy>
+  <DCAC_Conversion_Losses>157073.039498993</DCAC_Conversion_Losses>
+  <Inverter_Output>8000451.33715385</Inverter_Output>
+  <AC_Wiring_Losses>33947.6599756521</AC_Wiring_Losses>
+  <Night-Time_Energization_Losses>24090</Night-Time_Energization_Losses>
+  <External_Transformer_Losses>98101.3063534673</External_Transformer_Losses>
+  <Power_Injected_into_Grid>7844312.36690809</Power_Injected_into_Grid>
+</Losses>
